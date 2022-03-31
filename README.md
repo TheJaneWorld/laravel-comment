@@ -1,7 +1,7 @@
 > install
 
 ```shell
-composer require root/laravel-model-comment
+composer require the-jane-world/laravel-model-comment
 ```
 
 > start
@@ -13,11 +13,23 @@ composer require root/laravel-model-comment
 
 public function up()
 {
-    Schema::create('new_ueser', function (Blueprint $table) {
+    Schema::create('new_users', function (Blueprint $table) {
         $table->id();
         $table->timestamps();
-        $table->comment('2434');
+        $table->comment('新用户表');
     });
 }
+
+```
+
+
+```sql
+
+CREATE TABLE `new_users` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='新用户表';
 
 ```
