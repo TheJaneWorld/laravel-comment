@@ -1,0 +1,24 @@
+{
+    "name": "TheJaneWorld/laravel-model-comment",
+    "keywords": ["laravel", "table"],
+    "authors": [
+        {
+            "name": "JaneWorld",
+            "email": "547583682@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TheJaneWorld\\LaravelModelComment\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TheJaneWorld\\LaravelModelComment\\LaravelModelCommentProvider"
+            ]
+
+        }
+    },
+    "require": {}
+}
